@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Card style={{width: "375"}}>
         <Card.Header>
-          <TodoForm todos={todos} setTodos={setTodos} />
+          <TodoForm setTodos={setTodos} />
         </Card.Header>
         <Card.Body>
           <TodoList todos={todos} setTodos={setTodos} />

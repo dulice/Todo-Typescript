@@ -12,7 +12,7 @@ const TodoLists: FC<TodoListProps> = ({todos, setTodos}) => {
 
   return (
     <ListGroup>
-        {todos.map(el => (
+        {todos.sort((a,b) => b.id - a.id).map(el => (
             <List el={el} key={el.id} todos={todos} setTodos={setTodos}/>
         ))}
     </ListGroup>
